@@ -45,6 +45,7 @@
 <sitemesh:write property="head" />
 </head>
 <body class="skin-blue sidebar-mini">
+	<!-- .wrapper -->
 	<div class="wrapper">
 
 		<header class="main-header">
@@ -456,8 +457,8 @@
 		</aside>
 
 		<!-- Content Wrapper. Contains page content -->
-		<div class="content-wrapper">
-			<section class="content">
+		<div class="content-wrapper" style="border: 1px solid red;">
+			<section class="content" style="border: 1px solid blue;">
 				<!-- ################## -->
 				<!-- START Main Content -->
 				<!-- ################## -->
@@ -638,7 +639,7 @@
            immediately after the control sidebar -->
 		<div class='control-sidebar-bg'></div>
 		
-	</div>
+	</div >
 	<!-- ./wrapper -->
 
 
