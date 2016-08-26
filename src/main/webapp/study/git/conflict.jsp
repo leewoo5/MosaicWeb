@@ -21,6 +21,10 @@
 <title>conflict.jsp</title>
 </head>
 <body>
+<p>
+	Conflict Resolve I did..
+</p>
+
 
 </body>
 </html>
