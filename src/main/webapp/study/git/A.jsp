@@ -20,22 +20,6 @@
 	type="text/javascript"></script>
 </head>
 <body>
-<<<<<<< Updated upstream
-a
-a
-a
-a
-a
-a
-=======
-b
-b
-b
-b
-b
-b
-b
->>>>>>> Stashed changes
 
 </body>
 </html>
