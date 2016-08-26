@@ -3,6 +3,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>   
 <html>
+<!-- Bootstrap 3.3.4 -->
+<link href="/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet"
+	type="text/css" />
 <head>
 <title>readPage.jsp</title>
 <!-- 업로드 -->
@@ -47,7 +50,7 @@
 
 	<div class="row">
 		<!-- left column -->
-		<div class="col-md-12">
+		<div class="col-md-6">
 			<!-- general form elements -->
 			<div class="box box-primary">
 				<div class="box-header">
@@ -104,6 +107,9 @@
 			<!-- /.box -->
 		</div>
 		<!--/.col (left) -->
+		<div class="col-md-6">
+			<img class="img-circle" style="width:100%" alt="sss" src="http://cfile9.uf.tistory.com/image/145AB6334CA9FE498D5530"/>
+		</div>
 
 	</div>
 	<!-- /.row -->
@@ -117,26 +123,20 @@
 				<div class="box-header">
 					<h3 class="box-title">ADD NEW REPLY</h3>
 				</div>
-
-
-
-
+				<!--로그인 상태 -->
 				<c:if test="${not empty login}">
 					<div class="box-body">
-						<label for="exampleInputEmail1">Writer</label> <input
-							class="form-control" type="text" placeholder="USER ID"
-							id="newReplyWriter" value="${login.uid }" readonly="readonly">
-						<label for="exampleInputEmail1">Reply Text</label> <input
-							class="form-control" type="text" placeholder="REPLY TEXT"
-							id="newReplyText">
+						<label for="exampleInputEmail1">Writer</label> 
+						<input class="form-control" type="text" placeholder="USER ID" id="newReplyWriter" value="${login.uid }" readonly="readonly">
+						<label for="exampleInputEmail1">Reply Text</label> 
+						<input class="form-control" type="text" placeholder="REPLY TEXT" id="newReplyText">
 					</div>
 
 					<div class="box-footer">
-						<button type="submit" class="btn btn-primary" id="replyAddBtn">ADD
-							REPLY</button>
+						<button type="submit" class="btn btn-primary" id="replyAddBtn">ADD REPLY</button>
 					</div>
 				</c:if>
-
+				<!-- 로그아웃 상태 -->
 				<c:if test="${empty login}">
 					<div class="box-body">
 						<div>
@@ -193,10 +193,12 @@
 	</div>
 
 
-
+<!-- 	파일업로드 -->
 	<script id="templateAttach" type="text/x-handlebars-template">
 		<li data-src='{{fullName}}'>
-  			<span class="mailbox-attachment-icon has-img"><img src="{{imgsrc}}" alt="Attachment"></span>
+  			<span class="mailbox-attachment-icon has-img">
+				<img src="{{imgsrc}}" alt="Attachment">
+			</span>
   			<div class="mailbox-attachment-info">
 				<a href="{{getLink}}" class="mailbox-attachment-name">{{fileName}}</a>
 				</span>
@@ -205,7 +207,7 @@
 	</script>
 
 
-
+<!-- 	댓글 템플릿 -->
 	<script id="template" type="text/x-handlebars-template">
 		{{#each .}}
 	         <li class="replyLi" data-rno={{rno}}>
@@ -216,11 +218,11 @@
                 	</span>
                 <h3 class="timeline-header"><strong>{{rno}}</strong> -{{replyer}}</h3>
                 <div class="timeline-body">{{replytext}} </div>
-					<div class="timeline-footer">
-						{{#eqReplyer replyer }}
-                  		<a class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modifyModal">Modify</a>
-						{{/eqReplyer}}
-					</div>
+				<div class="timeline-footer">
+					{{#eqReplyer replyer }}
+                		<a class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modifyModal">Modify</a>
+					{{/eqReplyer}}
+				</div>
 	            </div>			
            </li>
         {{/each}}
