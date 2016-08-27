@@ -31,6 +31,8 @@
      folder instead of downloading all of them to reduce the load. -->
 <link href="/resources/dist/css/skins/_all-skins.min.css"
 	rel="stylesheet" type="text/css" />
+<!-- handlebars -->
+<script	src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
