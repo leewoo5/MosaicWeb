@@ -50,7 +50,7 @@
 
 	<div class="row">
 		<!-- left column -->
-		<div class="col-md-6">
+		<div class="col-md-12">
 			<!-- general form elements -->
 			<div class="box box-primary">
 				<div class="box-header">
@@ -106,11 +106,6 @@
 			</div>
 			<!-- /.box -->
 		</div>
-		<!--/.col (left) -->
-		<div class="col-md-6">
-			<img class="img-circle" style="width:100%" alt="sss" src="http://cfile9.uf.tistory.com/image/145AB6334CA9FE498D5530"/>
-		</div>
-
 	</div>
 	<!-- /.row -->
 

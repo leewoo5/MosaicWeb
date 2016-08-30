@@ -3,8 +3,6 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.zerock</groupId>
-	<artifactId>mosaic</artifactId>
-	<name>MosaicWeb</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 
@@ -257,4 +255,6 @@
 			</plugin>
 		</plugins>
 	</build>
+	<artifactId>project2</artifactId>
+	<name>project_second</name>
 </project>
